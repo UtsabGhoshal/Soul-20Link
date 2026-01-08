@@ -153,10 +153,10 @@ export default function Layout({ children }: LayoutProps) {
             {/* About */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                   <Heart className="w-5 h-5 text-white" />
                 </div>
-                <h3 className="text-lg font-bold">बाल Foundation</h3>
+                <h3 className="text-lg font-bold">Soul Link Foundation</h3>
               </div>
               <p className="text-gray-400 text-sm mb-4">
                 Providing mental health and healthcare services to underserved
@@ -165,7 +165,7 @@ export default function Layout({ children }: LayoutProps) {
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-red-500 transition-colors"
+                  className="text-gray-400 hover:text-blue-500 transition-colors"
                   aria-label="Facebook"
                 >
                   <svg
@@ -178,7 +178,7 @@ export default function Layout({ children }: LayoutProps) {
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-red-500 transition-colors"
+                  className="text-gray-400 hover:text-blue-500 transition-colors"
                   aria-label="Twitter"
                 >
                   <svg
@@ -191,7 +191,7 @@ export default function Layout({ children }: LayoutProps) {
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-red-500 transition-colors"
+                  className="text-gray-400 hover:text-blue-500 transition-colors"
                   aria-label="Instagram"
                 >
                   <svg
