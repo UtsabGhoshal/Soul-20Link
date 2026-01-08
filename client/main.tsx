@@ -16,6 +16,12 @@ import Contact from "./pages/Contact";
 import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
+declare global {
+  interface Window {
+    __REACT_ROOT__?: Root;
+  }
+}
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -41,30 +47,37 @@ const App = () => (
   </QueryClientProvider>
 );
 
-// Store root in module scope to prevent duplicate createRoot calls during HMR
-let root: Root | null = null;
-
+// Use window object to persist root across HMR reloads
 const initializeApp = () => {
   const rootElement = document.getElementById("root");
   if (!rootElement) return;
 
-  // Only create root once, reuse it for HMR updates
-  if (!root) {
-    root = createRoot(rootElement);
+  // Check if we already have a root instance in the window
+  if (window.__REACT_ROOT__) {
+    window.__REACT_ROOT__.render(<App />);
+  } else {
+    // Create root only on first load
+    const newRoot = createRoot(rootElement);
+    window.__REACT_ROOT__ = newRoot;
+    newRoot.render(<App />);
   }
-  root.render(<App />);
 };
 
-// Initialize app when DOM is ready
+// Initialize when ready
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", initializeApp);
 } else {
   initializeApp();
 }
 
-// Handle HMR
+// Cleanup on HMR dispose
 if (import.meta.hot) {
   import.meta.hot.dispose(() => {
-    // Clean up if needed
+    // Don't unmount on dispose - keep the root alive for re-render
+  });
+
+  import.meta.hot.accept([], () => {
+    // Re-render on any hot update
+    initializeApp();
   });
 }
