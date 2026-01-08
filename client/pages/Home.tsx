@@ -244,11 +244,11 @@ export default function Home() {
       </section>
 
       {/* Impact & Statistics */}
-      <section className="bg-teal-700 py-16 md:py-24 text-white">
+      <section className="bg-cyan-500 py-16 md:py-24 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Impact</h2>
-            <p className="text-teal-100 max-w-2xl mx-auto">
+            <p className="text-cyan-100 max-w-2xl mx-auto">
               Making a measurable difference in mental health and healthcare
               access
             </p>
@@ -265,7 +265,7 @@ export default function Home() {
                 <div className="text-4xl md:text-5xl font-bold mb-2">
                   {stat.number}
                 </div>
-                <p className="text-teal-100 font-medium">{stat.label}</p>
+                <p className="text-cyan-100 font-medium">{stat.label}</p>
               </div>
             ))}
           </div>
