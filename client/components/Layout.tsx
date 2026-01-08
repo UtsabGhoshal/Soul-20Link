@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X, Heart, Search, MessageCircle, HelpCircle, Phone, Mail } from "lucide-react";
 import { useState } from "react";
 
 interface LayoutProps {
@@ -11,64 +11,93 @@ export default function Layout({ children }: LayoutProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Team", href: "/team" },
-    { label: "News", href: "/news" },
-    { label: "Gallery", href: "/gallery" },
-    { label: "Contact", href: "/contact" },
+    { label: "About Us", href: "/about" },
+    { label: "What we do", href: "/news" },
+    { label: "Partnership", href: "/contact" },
+    { label: "Get Involved", href: "/donate" },
+    { label: "Resources", href: "/gallery" },
   ];
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Header */}
+      {/* Top Red Header Bar */}
+      <div className="bg-red-600 text-white text-sm py-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div className="text-center sm:text-left">Ask here to save certificates</div>
+            <div className="flex gap-6 text-xs sm:text-sm">
+              <a href="tel:+911140538140" className="flex items-center gap-1 hover:opacity-90 transition-opacity">
+                <Phone className="w-4 h-4" />
+                011-40538140
+              </a>
+              <a href="mailto:info@ngo.org" className="flex items-center gap-1 hover:opacity-90 transition-opacity">
+                <Mail className="w-4 h-4" />
+                info@ngo.org
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Header */}
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex-shrink-0">
-              <div className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-md">
-                  <Heart className="w-6 h-6 text-white" />
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shadow-md">
+                  <Heart className="w-7 h-7 text-white" />
                 </div>
                 <div className="hidden sm:block">
-                  <div className="text-lg font-bold text-gray-900">
-                    Healthcare Foundation
+                  <div className="text-xl font-bold text-gray-900">
+                    बाल
                   </div>
-                  <div className="text-xs text-primary font-medium">
-                    Mental Health & Psychology
+                  <div className="text-xs text-gray-600 font-medium">
+                    Mental Health & Wellness
                   </div>
                 </div>
               </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex gap-8">
+            <nav className="hidden md:flex gap-6 lg:gap-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   to={link.href}
-                  className="text-gray-700 hover:text-primary font-medium transition-colors"
+                  className="text-gray-700 hover:text-red-600 font-medium transition-colors text-sm"
                 >
                   {link.label}
                 </Link>
               ))}
             </nav>
 
-            {/* Donate Button Removed - Now at bottom of homepage */}
+            {/* Right Section */}
+            <div className="flex items-center gap-3">
+              <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                <Search className="w-5 h-5 text-gray-700" />
+              </button>
+              <Link
+                to="/donate"
+                className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 sm:px-6 rounded transition-colors text-sm"
+              >
+                Donate Now
+              </Link>
 
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {mobileMenuOpen ? (
-                <X className="w-6 h-6 text-gray-700" />
-              ) : (
-                <Menu className="w-6 h-6 text-gray-700" />
-              )}
-            </button>
+              {/* Mobile Menu Button */}
+              <button
+                className="md:hidden p-2"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                aria-label="Toggle menu"
+              >
+                {mobileMenuOpen ? (
+                  <X className="w-6 h-6 text-gray-700" />
+                ) : (
+                  <Menu className="w-6 h-6 text-gray-700" />
+                )}
+              </button>
+            </div>
           </div>
 
           {/* Mobile Navigation */}
@@ -78,7 +107,7 @@ export default function Layout({ children }: LayoutProps) {
                 <Link
                   key={link.href}
                   to={link.href}
-                  className="block py-2 text-gray-700 hover:text-primary font-medium transition-colors"
+                  className="block py-2 text-gray-700 hover:text-red-600 font-medium transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
@@ -88,6 +117,25 @@ export default function Layout({ children }: LayoutProps) {
           )}
         </div>
       </header>
+
+      {/* Floating Action Buttons */}
+      <div className="fixed bottom-8 right-8 flex flex-col gap-4 z-40">
+        <a
+          href="https://wa.me/919876543210"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
+          aria-label="WhatsApp"
+        >
+          <MessageCircle className="w-7 h-7" />
+        </a>
+        <button
+          className="w-14 h-14 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
+          aria-label="Help"
+        >
+          <HelpCircle className="w-7 h-7" />
+        </button>
+      </div>
 
       {/* Main Content */}
       <main className="flex-grow">{children}</main>
