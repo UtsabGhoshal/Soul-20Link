@@ -250,9 +250,9 @@ export default function Home() {
             ].map((service, index) => (
               <div
                 key={index}
-                className="p-6 bg-white border-2 border-gray-100 rounded hover:border-red-600 hover:shadow-lg transition-all group"
+                className="p-6 bg-white border-2 border-gray-100 rounded hover:border-blue-600 hover:shadow-lg transition-all group"
               >
-                <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform">
+                <div className="text-blue-600 mb-4 group-hover:scale-110 transition-transform">
                   {service.icon}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -266,11 +266,11 @@ export default function Home() {
       </section>
 
       {/* Impact & Statistics */}
-      <section className="bg-cyan-500 py-16 md:py-24 text-white">
+      <section className="bg-blue-600 py-16 md:py-24 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Impact</h2>
-            <p className="text-cyan-100 max-w-2xl mx-auto">
+            <p className="text-blue-100 max-w-2xl mx-auto">
               Making a measurable difference in mental health and healthcare
               access
             </p>
@@ -287,7 +287,7 @@ export default function Home() {
                 <div className="text-4xl md:text-5xl font-bold mb-2">
                   {stat.number}
                 </div>
-                <p className="text-cyan-100 font-medium">{stat.label}</p>
+                <p className="text-blue-100 font-medium">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -318,7 +318,7 @@ export default function Home() {
               </p>
               <Link
                 to="/about"
-                className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded transition-colors"
+                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded transition-colors"
               >
                 Our Story <ArrowRight className="w-4 h-4" />
               </Link>
