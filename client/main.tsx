@@ -41,7 +41,16 @@ const App = () => (
   </QueryClientProvider>
 );
 
-const root = document.getElementById("root");
-if (root && !root.hasChildNodes()) {
-  createRoot(root).render(<App />);
+// Mount the app only once
+const rootElement = document.getElementById("root");
+if (rootElement) {
+  // Check if root has already been created
+  const existingRoot = (rootElement as any)._reactRootContainer;
+  if (existingRoot) {
+    // If root exists, use the existing one
+    existingRoot.render(<App />);
+  } else {
+    // Otherwise create a new root
+    createRoot(rootElement).render(<App />);
+  }
 }
