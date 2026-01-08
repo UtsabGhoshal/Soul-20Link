@@ -55,58 +55,80 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-            {/* Left side - Images Grid */}
-            <div className="lg:col-span-1.5 grid grid-cols-2 gap-3">
-              <div className="rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="https://images.unsplash.com/photo-1559027615-cd2628902d4a?w=300&h=300&fit=crop"
-                  alt="Community activity"
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=300&fit=crop"
-                  alt="Workshop"
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=300&fit=crop"
-                  alt="Healthcare"
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="https://images.unsplash.com/photo-1631217314831-c6227db76b6e?w=300&h=300&fit=crop"
-                  alt="Support group"
-                  className="w-full h-48 object-cover"
-                />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Text Content */}
+            <div className="z-10">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+                Welcome to Soul Link Foundation
+              </h1>
+              <p className="text-lg text-gray-600 mb-2 font-semibold text-blue-700">
+                Transforming Lives Through Mental Health & Wellness
+              </p>
+              <p className="text-gray-700 mb-8 leading-relaxed">
+                Soul Link is dedicated to providing comprehensive mental health services, psychological
+                counseling, and healthcare interventions to underserved
+                communities across India. Our mission is to make quality mental
+                healthcare accessible to all.
+              </p>
+              <div className="flex gap-4 flex-wrap">
+                <Link
+                  to="/about"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded transition-colors inline-flex items-center gap-2"
+                >
+                  Learn More <ArrowRight className="w-5 h-5" />
+                </Link>
+                <Link
+                  to="/contact"
+                  className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold py-3 px-8 rounded transition-colors"
+                >
+                  Contact Us
+                </Link>
               </div>
             </div>
 
-            {/* Right side - Turquoise Content Card */}
-            <div className="lg:col-span-1.5 bg-cyan-400 rounded-lg p-8 md:p-12 flex flex-col justify-center text-white relative">
-              <div className="absolute top-0 right-0 -mt-4 -mr-4 w-20 h-20 bg-gray-600 text-white rounded-lg p-4 flex items-center justify-center font-bold text-sm text-center hidden md:flex">
-                Featured
+            {/* Images */}
+            <div className="relative h-96 md:h-full hidden lg:block">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="relative w-full h-full">
+                  <div className="absolute top-0 right-0 w-2/3 h-2/3 rounded-lg overflow-hidden shadow-xl">
+                    <img
+                      src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=400&fit=crop"
+                      alt="Healthcare professionals"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 w-1/2 h-1/2 rounded-lg overflow-hidden shadow-lg">
+                    <img
+                      src="https://images.unsplash.com/photo-1559027615-cd2628902d4a?w=400&h=300&fit=crop"
+                      alt="Counseling session"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute bottom-4 right-12 w-1/3 h-1/3 rounded-lg overflow-hidden shadow-md bg-white border-4 border-white">
+                    <img
+                      src="https://images.unsplash.com/photo-1631217314831-c6227db76b6e?w=300&h=300&fit=crop"
+                      alt="Mental health support"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
               </div>
-
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                8TH RASHTRIYA POSHAN DIVAS 2025: BUILDING SUPOSHIT & SAMRIDDH BHARAT
-              </h2>
-
-              <p className="text-cyan-50 mb-8 leading-relaxed">
-                Join us in celebrating National Nutrition Day as we focus on building a healthier, more nourished India. Our initiatives aim to address nutritional challenges and promote wellness across communities.
-              </p>
-
-              <button className="bg-white text-cyan-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded transition-colors inline-flex items-center gap-2 w-fit">
-                Read More <ArrowRight className="w-4 h-4" />
-              </button>
             </div>
           </div>
+        </div>
+
+        {/* Mobile Images */}
+        <div className="lg:hidden grid grid-cols-2 gap-3 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+          <img
+            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop"
+            alt="Healthcare"
+            className="rounded-lg shadow-md"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1631217314831-c6227db76b6e?w=400&h=300&fit=crop"
+            alt="Support"
+            className="rounded-lg shadow-md"
+          />
         </div>
       </section>
 
