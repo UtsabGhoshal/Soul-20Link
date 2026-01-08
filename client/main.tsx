@@ -1,7 +1,7 @@
 import "./global.css";
 
 import { Toaster } from "@/components/ui/toaster";
-import { createRoot } from "react-dom/client";
+import { createRoot, Root } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -41,16 +41,30 @@ const App = () => (
   </QueryClientProvider>
 );
 
-// Mount the app only once
-const rootElement = document.getElementById("root");
-if (rootElement) {
-  // Check if root has already been created
-  const existingRoot = (rootElement as any)._reactRootContainer;
-  if (existingRoot) {
-    // If root exists, use the existing one
-    existingRoot.render(<App />);
-  } else {
-    // Otherwise create a new root
-    createRoot(rootElement).render(<App />);
+// Store root in module scope to prevent duplicate createRoot calls during HMR
+let root: Root | null = null;
+
+const initializeApp = () => {
+  const rootElement = document.getElementById("root");
+  if (!rootElement) return;
+
+  // Only create root once, reuse it for HMR updates
+  if (!root) {
+    root = createRoot(rootElement);
   }
+  root.render(<App />);
+};
+
+// Initialize app when DOM is ready
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeApp);
+} else {
+  initializeApp();
+}
+
+// Handle HMR
+if (import.meta.hot) {
+  import.meta.hot.dispose(() => {
+    // Clean up if needed
+  });
 }
