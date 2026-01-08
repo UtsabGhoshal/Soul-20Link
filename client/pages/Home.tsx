@@ -228,9 +228,9 @@ export default function Home() {
             ].map((service, index) => (
               <div
                 key={index}
-                className="p-6 bg-white border-2 border-gray-100 rounded hover:border-teal-700 hover:shadow-lg transition-all group"
+                className="p-6 bg-white border-2 border-gray-100 rounded hover:border-red-600 hover:shadow-lg transition-all group"
               >
-                <div className="text-teal-700 mb-4 group-hover:scale-110 transition-transform">
+                <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform">
                   {service.icon}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
