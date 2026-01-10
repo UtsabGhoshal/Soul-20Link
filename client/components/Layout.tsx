@@ -112,7 +112,7 @@ export default function Layout({ children }: LayoutProps) {
               </button>
               <Link
                 to="/donate"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 sm:px-6 rounded transition-colors text-sm"
+                className="bg-primary hover:bg-primary/90 text-white font-semibold py-2 px-4 sm:px-6 rounded transition-colors text-sm"
               >
                 Donate Now
               </Link>
