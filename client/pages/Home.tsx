@@ -366,7 +366,7 @@ export default function Home() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="p-6 bg-gray-50 rounded border-l-4 border-blue-600"
+                className="p-6 bg-gray-50 rounded border-l-4 border-primary"
               >
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   {item.title}
