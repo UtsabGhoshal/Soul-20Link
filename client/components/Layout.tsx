@@ -21,8 +21,9 @@ export default function Layout({ children }: LayoutProps) {
 
   const navLinks = [
     { label: "About Us", href: "/about" },
-    { label: "What we do", href: "/news" },
-    { label: "Partnership", href: "/contact" },
+    { label: "Services", href: "/services" },
+    { label: "Impact", href: "/impact" },
+    { label: "Partnership", href: "/fundraising" },
     { label: "Get Involved", href: "/donate" },
     { label: "Resources", href: "/gallery" },
   ];
