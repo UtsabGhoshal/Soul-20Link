@@ -309,6 +309,3 @@ export default function Fundraising() {
     </Layout>
   );
 }
-
-// Missing imports fix
-import { Globe2, Lightbulb, BarChart3, Award } from "lucide-react";
