@@ -191,7 +191,7 @@ export default function Layout({ children }: LayoutProps) {
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-500 transition-colors"
+                  className="text-gray-400 hover:text-primary transition-colors"
                   aria-label="Facebook"
                 >
                   <svg
