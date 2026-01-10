@@ -317,8 +317,8 @@ export default function Home() {
                 awareness.
               </p>
               <Link
-                to="/about"
-                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded transition-colors"
+                to="/impact"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-8 rounded transition-colors"
               >
                 Our Story <ArrowRight className="w-4 h-4" />
               </Link>
