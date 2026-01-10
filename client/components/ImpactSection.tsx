@@ -48,7 +48,7 @@ export default function ImpactSection() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     if (sectionRef.current) {
@@ -72,7 +72,7 @@ export default function ImpactSection() {
           if (newCounts[index] < stat.number) {
             newCounts[index] = Math.min(
               newCounts[index] + stat.number / steps,
-              stat.number
+              stat.number,
             );
           }
           return newCounts;

@@ -37,11 +37,17 @@ export default function Layout({ children }: LayoutProps) {
           <div className="scroll-text-container flex-1 min-w-0">
             <div className="scroll-text inline-block">
               <span style={{ fontFamily: "'Times New Roman', serif" }}>
-                Soul Link is registered under sections 12A &amp; 80G of the Income Tax Act, 1961 and CSR-1 registered under the Ministry of Health &amp; Education.{" "}
-                <Link to="/certificates" className="underline hover:opacity-80 transition-opacity font-semibold" style={{ fontFamily: "'Times New Roman', serif" }}>
+                Soul Link is registered under sections 12A &amp; 80G of the
+                Income Tax Act, 1961 and CSR-1 registered under the Ministry of
+                Health &amp; Education.{" "}
+                <Link
+                  to="/certificates"
+                  className="underline hover:opacity-80 transition-opacity font-semibold"
+                  style={{ fontFamily: "'Times New Roman', serif" }}
+                >
                   click here
-                </Link>
-                {" "} to view the certificates
+                </Link>{" "}
+                to view the certificates
               </span>
             </div>
           </div>
