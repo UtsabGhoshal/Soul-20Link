@@ -284,7 +284,7 @@ export default function Layout({ children }: LayoutProps) {
                 <li>
                   <Link
                     to="/news"
-                    className="hover:text-blue-500 transition-colors"
+                    className="hover:text-primary transition-colors"
                   >
                     Latest News
                   </Link>
@@ -292,7 +292,7 @@ export default function Layout({ children }: LayoutProps) {
                 <li>
                   <Link
                     to="/gallery"
-                    className="hover:text-blue-500 transition-colors"
+                    className="hover:text-primary transition-colors"
                   >
                     Gallery
                   </Link>
@@ -300,13 +300,13 @@ export default function Layout({ children }: LayoutProps) {
                 <li>
                   <Link
                     to="/certificates"
-                    className="hover:text-blue-500 transition-colors"
+                    className="hover:text-primary transition-colors"
                   >
                     Certificates
                   </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-500 transition-colors">
+                  <a href="#" className="hover:text-primary transition-colors">
                     Terms of Service
                   </a>
                 </li>
