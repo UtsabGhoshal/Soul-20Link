@@ -84,12 +84,7 @@ export default function ImpactSection() {
 
   const formatNumber = (num: number, original: number) => {
     const rounded = Math.floor(num);
-    if (original >= 1000) {
-      return `${(rounded / 1000).toFixed(0)}${original % 1000 === 0 ? "," : "."}${
-        rounded % 1000
-      }+`;
-    }
-    return `${rounded}+`;
+    return rounded.toLocaleString() + "+";
   };
 
   return (
