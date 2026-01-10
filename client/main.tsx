@@ -15,6 +15,9 @@ import Certificates from "./pages/Certificates";
 import Donation from "./pages/Donation";
 import Contact from "./pages/Contact";
 import Admin from "./pages/Admin";
+import Services from "./pages/Services";
+import Impact from "./pages/Impact";
+import Fundraising from "./pages/Fundraising";
 import NotFound from "./pages/NotFound";
 
 declare global {
