@@ -37,7 +37,10 @@ export default function Layout({ children }: LayoutProps) {
           <div className="scroll-text-container flex-1 min-w-0">
             <div className="scroll-text inline-block">
               <span>
-                📞 Thank you for contacting Prajit Rong  |  Calls/WhatsApp Preferred  |  📅 Mon-Sat, 10 AM - 7 PM  |  📧 teamprajitrong@gmail.com  |  Soul Link Foundation - Advancing Mental Well-Being Globally
+                📞 Thank you for contacting Prajit Rong | Calls/WhatsApp
+                Preferred | 📅 Mon-Sat, 10 AM - 7 PM | 📧
+                teamprajitrong@gmail.com | Soul Link Foundation - Advancing
+                Mental Well-Being Globally
               </span>
             </div>
           </div>
@@ -178,8 +181,8 @@ export default function Layout({ children }: LayoutProps) {
                 <h3 className="text-lg font-bold">SoulLink Foundation</h3>
               </div>
               <p className="text-gray-400 text-sm mb-4">
-                Advancing inclusive mental well-being and psychological support globally.
-                Contact Prajit Rong for services and inquiries.
+                Advancing inclusive mental well-being and psychological support
+                globally. Contact Prajit Rong for services and inquiries.
               </p>
               <div className="flex gap-4">
                 <a
@@ -324,7 +327,8 @@ export default function Layout({ children }: LayoutProps) {
                   </a>
                 </li>
                 <li className="text-xs text-gray-500">
-                  📞 Call/WhatsApp preferred<br/>
+                  📞 Call/WhatsApp preferred
+                  <br />
                   🕙 10 AM - 7 PM (Mon-Sat)
                 </li>
                 <li>
@@ -346,7 +350,8 @@ export default function Layout({ children }: LayoutProps) {
                   📍 Quick Contact
                 </p>
                 <p>
-                  Prajit Rong | 📞 Call/WhatsApp | 🕙 10 AM - 7 PM (Mon-Sat) | 📧 teamprajitrong@gmail.com
+                  Prajit Rong | 📞 Call/WhatsApp | 🕙 10 AM - 7 PM (Mon-Sat) |
+                  📧 teamprajitrong@gmail.com
                 </p>
               </div>
               <div>
@@ -354,14 +359,16 @@ export default function Layout({ children }: LayoutProps) {
                   Mission & Values
                 </p>
                 <p>
-                  Providing accessible, inclusive mental health support without financial barriers.
-                  Committed to ethics, transparency, and measurable impact.
+                  Providing accessible, inclusive mental health support without
+                  financial barriers. Committed to ethics, transparency, and
+                  measurable impact.
                 </p>
               </div>
             </div>
             <div className="text-center text-gray-500 text-sm border-t border-gray-700 pt-6">
               <p>
-                &copy; 2024 SoulLink Foundation. All rights reserved. | Advancing Mental Well-Being Globally
+                &copy; 2024 SoulLink Foundation. All rights reserved. |
+                Advancing Mental Well-Being Globally
               </p>
             </div>
           </div>

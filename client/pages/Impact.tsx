@@ -17,7 +17,9 @@ export default function Impact() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🌱 Impact & Future Goals</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            🌱 Impact & Future Goals
+          </h1>
           <p className="text-xl text-white/80 max-w-2xl">
             Measuring our impact and charting our course toward global change
           </p>
@@ -32,7 +34,8 @@ export default function Impact() {
               Measured Impact
             </h2>
             <p className="text-gray-700 leading-relaxed max-w-3xl">
-              Our work has contributed to meaningful, measurable change in mental health and community well-being.
+              Our work has contributed to meaningful, measurable change in
+              mental health and community well-being.
             </p>
           </div>
 
@@ -41,12 +44,14 @@ export default function Impact() {
               {
                 icon: <Heart className="w-8 h-8" />,
                 metric: "50,000+",
-                description: "Improved emotional well-being across diverse communities",
+                description:
+                  "Improved emotional well-being across diverse communities",
               },
               {
                 icon: <TrendingUp className="w-8 h-8" />,
                 metric: "Increased Awareness",
-                description: "Reduced stigma surrounding mental health through education",
+                description:
+                  "Reduced stigma surrounding mental health through education",
               },
               {
                 icon: <Globe className="w-8 h-8" />,
@@ -61,7 +66,10 @@ export default function Impact() {
                   "Enhanced individual resilience and cognitive well-being across populations",
               },
             ].map((item, index) => (
-              <div key={index} className="p-8 bg-gray-50 rounded-lg border-l-4 border-secondary">
+              <div
+                key={index}
+                className="p-8 bg-gray-50 rounded-lg border-l-4 border-secondary"
+              >
                 <div className="text-secondary mb-4">{item.icon}</div>
                 <h3 className="text-2xl font-bold text-primary mb-2">
                   {item.metric}
@@ -73,7 +81,10 @@ export default function Impact() {
 
           <div className="mt-12 p-8 bg-blue-50 rounded-lg">
             <p className="text-gray-700 leading-relaxed">
-              <strong>Continuous Evaluation:</strong> We continuously assess outcomes to ensure effectiveness, responsibility, and sustained social impact through rigorous monitoring, data collection, and community feedback.
+              <strong>Continuous Evaluation:</strong> We continuously assess
+              outcomes to ensure effectiveness, responsibility, and sustained
+              social impact through rigorous monitoring, data collection, and
+              community feedback.
             </p>
           </div>
         </div>
@@ -125,7 +136,10 @@ export default function Impact() {
                   "Building sustainable systems ensuring lasting impact for generations to come",
               },
             ].map((priority, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div
+                key={index}
+                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              >
                 <div className="text-secondary mb-4">{priority.icon}</div>
                 <h3 className="text-lg font-semibold text-primary mb-3">
                   {priority.title}
@@ -136,9 +150,14 @@ export default function Impact() {
           </div>
 
           <div className="mt-12 p-8 bg-teal-50 rounded-lg border-l-4 border-secondary">
-            <p className="text-gray-900 font-semibold mb-2">Long-Term Objective</p>
+            <p className="text-gray-900 font-semibold mb-2">
+              Long-Term Objective
+            </p>
             <p className="text-gray-700 leading-relaxed">
-              Our long-term objective is to contribute to a resilient, mentally healthy global society through inclusive and responsible mental health initiatives. We aim to create systemic change that ensures no one is left behind in their mental health journey.
+              Our long-term objective is to contribute to a resilient, mentally
+              healthy global society through inclusive and responsible mental
+              health initiatives. We aim to create systemic change that ensures
+              no one is left behind in their mental health journey.
             </p>
           </div>
         </div>
@@ -169,11 +188,16 @@ export default function Impact() {
                   "Families dealing with relationship challenges found renewed connection and improved communication through our family counseling programs.",
               },
             ].map((story, index) => (
-              <div key={index} className="p-8 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg border border-primary/20">
+              <div
+                key={index}
+                className="p-8 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg border border-primary/20"
+              >
                 <h3 className="text-lg font-semibold text-primary mb-3">
                   {story.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">{story.description}</p>
+                <p className="text-gray-700 leading-relaxed">
+                  {story.description}
+                </p>
               </div>
             ))}
           </div>
@@ -188,10 +212,18 @@ export default function Impact() {
               Our Commitment to Impact
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              We are committed to delivering measurable results and creating sustainable change in mental health and community well-being. Every program, every intervention, and every resource allocation is guided by our commitment to effectiveness and ethical stewardship.
+              We are committed to delivering measurable results and creating
+              sustainable change in mental health and community well-being.
+              Every program, every intervention, and every resource allocation
+              is guided by our commitment to effectiveness and ethical
+              stewardship.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              We believe that through continued dedication, innovation, and collaboration, we can contribute meaningfully to a world where mental health is no longer stigmatized, where access is universal, and where every individual can achieve their full potential in wellness and resilience.
+              We believe that through continued dedication, innovation, and
+              collaboration, we can contribute meaningfully to a world where
+              mental health is no longer stigmatized, where access is universal,
+              and where every individual can achieve their full potential in
+              wellness and resilience.
             </p>
           </div>
         </div>

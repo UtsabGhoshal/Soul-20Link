@@ -45,7 +45,8 @@ export default function Contact() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
           <p className="text-xl text-white/80 max-w-2xl">
             📞 Thank you for contacting Prajit Rong at SoulLink Foundation.
-            Calls are preferred for more effective communication and better understanding of your needs.
+            Calls are preferred for more effective communication and better
+            understanding of your needs.
           </p>
         </div>
       </section>
@@ -62,9 +63,7 @@ export default function Contact() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Contact Person
               </h3>
-              <p className="text-gray-600 text-sm font-semibold">
-                Prajit Rong
-              </p>
+              <p className="text-gray-600 text-sm font-semibold">Prajit Rong</p>
               <p className="text-gray-600 text-sm">
                 SoulLink Foundation
                 <br />
@@ -81,7 +80,9 @@ export default function Contact() {
                 Phone
               </h3>
               <p className="text-gray-600 text-sm mb-2">
-                <span className="font-semibold block text-primary">WhatsApp or Call</span>
+                <span className="font-semibold block text-primary">
+                  WhatsApp or Call
+                </span>
                 <span className="text-xs text-gray-500">(Calls Preferred)</span>
               </p>
             </div>
@@ -102,9 +103,7 @@ export default function Contact() {
                   teamprajitrong@gmail.com
                 </a>
               </p>
-              <p className="text-gray-600 text-xs mt-2">
-                For urgent matters
-              </p>
+              <p className="text-gray-600 text-xs mt-2">For urgent matters</p>
             </div>
 
             {/* Office Hours */}
@@ -131,16 +130,28 @@ export default function Contact() {
               📞 How to Reach Us
             </h3>
             <p className="text-gray-700 mb-3">
-              We prefer phone calls for more effective communication and to better understand your needs.
+              We prefer phone calls for more effective communication and to
+              better understand your needs.
             </p>
             <ul className="text-gray-700 space-y-2 text-sm">
-              <li>✓ <strong>Preferred Method:</strong> Direct call or WhatsApp</li>
-              <li>✓ <strong>Call Hours:</strong> 10:00 AM – 7:00 PM, Monday to Saturday</li>
-              <li>✓ <strong>For Urgent Matters:</strong> Email teamprajitrong@gmail.com</li>
-              <li>✓ <strong>Response Time:</strong> We respond as soon as possible</li>
+              <li>
+                ✓ <strong>Preferred Method:</strong> Direct call or WhatsApp
+              </li>
+              <li>
+                ✓ <strong>Call Hours:</strong> 10:00 AM – 7:00 PM, Monday to
+                Saturday
+              </li>
+              <li>
+                ✓ <strong>For Urgent Matters:</strong> Email
+                teamprajitrong@gmail.com
+              </li>
+              <li>
+                ✓ <strong>Response Time:</strong> We respond as soon as possible
+              </li>
             </ul>
             <p className="text-gray-600 text-sm mt-4">
-              Thank you for your patience and for reaching out to SoulLink Foundation.
+              Thank you for your patience and for reaching out to SoulLink
+              Foundation.
             </p>
           </div>
         </div>
@@ -303,7 +314,8 @@ export default function Contact() {
             </div>
 
             <p className="text-center text-sm text-gray-600 pt-4 border-t border-gray-300">
-              We typically respond as soon as possible during our office hours: Monday - Saturday, 10:00 AM - 7:00 PM.
+              We typically respond as soon as possible during our office hours:
+              Monday - Saturday, 10:00 AM - 7:00 PM.
             </p>
           </form>
         </div>

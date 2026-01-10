@@ -49,7 +49,9 @@ export default function Services() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🧠 Therapy & Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            🧠 Therapy & Services
+          </h1>
           <p className="text-xl text-white/80 max-w-2xl">
             Advanced, modern, and evidence-based therapeutic approaches
           </p>
@@ -64,7 +66,10 @@ export default function Services() {
               Clinical & Therapeutic Framework
             </h2>
             <p className="text-gray-700 leading-relaxed max-w-3xl">
-              Our therapeutic services are grounded in modern psychological science, ethical standards, and culturally sensitive practices. We adopt a person-centered and trauma-informed approach to ensure safety, dignity, and effectiveness across diverse populations.
+              Our therapeutic services are grounded in modern psychological
+              science, ethical standards, and culturally sensitive practices. We
+              adopt a person-centered and trauma-informed approach to ensure
+              safety, dignity, and effectiveness across diverse populations.
             </p>
           </div>
 
@@ -123,13 +128,17 @@ export default function Services() {
               Key Services
             </h2>
             <p className="text-gray-700 leading-relaxed max-w-3xl">
-              All services are delivered with respect for confidentiality, ethics, and individual autonomy.
+              All services are delivered with respect for confidentiality,
+              ethics, and individual autonomy.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div
+                key={index}
+                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              >
                 <div className="text-secondary mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {service.title}
@@ -189,7 +198,10 @@ export default function Services() {
                   "Individual, group, family, and community-based interventions",
               },
             ].map((feature, index) => (
-              <div key={index} className="p-6 bg-gray-50 rounded-lg text-center hover:bg-primary/5 transition-colors">
+              <div
+                key={index}
+                className="p-6 bg-gray-50 rounded-lg text-center hover:bg-primary/5 transition-colors"
+              >
                 <div className="text-4xl font-bold text-primary mb-3">
                   {feature.number}
                 </div>
@@ -261,7 +273,8 @@ export default function Services() {
             Ready to Begin Your Wellness Journey?
           </h2>
           <p className="text-lg text-white/80 mb-8">
-            Reach out to us today to learn more about our services or schedule a consultation
+            Reach out to us today to learn more about our services or schedule a
+            consultation
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link

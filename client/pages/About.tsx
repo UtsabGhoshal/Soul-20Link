@@ -62,10 +62,18 @@ export default function About() {
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-secondary">
               <div className="flex items-center gap-3 mb-4">
                 <Heart className="w-8 h-8 text-secondary" />
-                <h3 className="text-2xl font-bold text-gray-900">🌍 Our Vision</h3>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  🌍 Our Vision
+                </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                Our vision is to create a world where mental well-being is accessible to everyone, without financial or social barriers. We aim to build a global ecosystem of mental relief and psychological support that serves individuals across all regions—from remote communities to modern cities—and across all economic backgrounds. Mental health is universal, and our vision reaches beyond borders, cultures, and continents.
+                Our vision is to create a world where mental well-being is
+                accessible to everyone, without financial or social barriers. We
+                aim to build a global ecosystem of mental relief and
+                psychological support that serves individuals across all
+                regions—from remote communities to modern cities—and across all
+                economic backgrounds. Mental health is universal, and our vision
+                reaches beyond borders, cultures, and continents.
               </p>
             </div>
 
@@ -73,10 +81,19 @@ export default function About() {
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
               <div className="flex items-center gap-3 mb-4">
                 <Target className="w-8 h-8 text-primary" />
-                <h3 className="text-2xl font-bold text-gray-900">🎯 Our Mission</h3>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  🎯 Our Mission
+                </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                Our mission is to deliver mental relief, mind improvement, and psychological well-being through advanced, modern, and evidence-based therapeutic approaches. We are committed to ensuring that access to mental health support is never limited by economic conditions. Our services are designed to be inclusive, ethical, and available to all individuals, regardless of their financial background, geographic location, or social status.
+                Our mission is to deliver mental relief, mind improvement, and
+                psychological well-being through advanced, modern, and
+                evidence-based therapeutic approaches. We are committed to
+                ensuring that access to mental health support is never limited
+                by economic conditions. Our services are designed to be
+                inclusive, ethical, and available to all individuals, regardless
+                of their financial background, geographic location, or social
+                status.
               </p>
             </div>
           </div>
@@ -87,9 +104,12 @@ export default function About() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">🧠 What We Do</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              🧠 What We Do
+            </h2>
             <p className="text-gray-700 leading-relaxed">
-              We are a non-profit organization working to make mental health support inclusive and universally accessible.
+              We are a non-profit organization working to make mental health
+              support inclusive and universally accessible.
             </p>
           </div>
 
@@ -102,7 +122,9 @@ export default function About() {
               "Expanding our impact globally, from developing regions to developed nations",
             ].map((item, index) => (
               <div key={index} className="flex gap-4 p-6 bg-gray-50 rounded-lg">
-                <div className="text-primary text-2xl font-bold flex-shrink-0">•</div>
+                <div className="text-primary text-2xl font-bold flex-shrink-0">
+                  •
+                </div>
                 <p className="text-gray-700">{item}</p>
               </div>
             ))}
@@ -110,7 +132,9 @@ export default function About() {
 
           <div className="mt-12 p-8 bg-blue-50 rounded-lg border-l-4 border-primary">
             <p className="text-gray-700 leading-relaxed">
-              Our approach is rooted in compassion, dignity, and the belief that mental wellness should not be restricted by financial or social limitations.
+              Our approach is rooted in compassion, dignity, and the belief that
+              mental wellness should not be restricted by financial or social
+              limitations.
             </p>
           </div>
         </div>
@@ -119,21 +143,26 @@ export default function About() {
       {/* What Makes Us Different */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">💙 What Makes Us Different</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+            💙 What Makes Us Different
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
                 title: "Inclusive Approach",
-                description: "We prioritize access over affordability, ensuring no one is left behind",
+                description:
+                  "We prioritize access over affordability, ensuring no one is left behind",
               },
               {
                 title: "Universal Support",
-                description: "Equal support for individuals from all walks of life",
+                description:
+                  "Equal support for individuals from all walks of life",
               },
               {
                 title: "Global Outlook",
-                description: "A mission without geographical or economic boundaries",
+                description:
+                  "A mission without geographical or economic boundaries",
               },
               {
                 title: "Ethics & Empathy",

@@ -21,9 +21,12 @@ export default function Fundraising() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🤝 Fundraising & Strategic Support</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            🤝 Fundraising & Strategic Support
+          </h1>
           <p className="text-xl text-white/80 max-w-2xl">
-            Advancing inclusive mental well-being through structured, ethical, and evidence-informed practices
+            Advancing inclusive mental well-being through structured, ethical,
+            and evidence-informed practices
           </p>
         </div>
       </section>
@@ -36,10 +39,16 @@ export default function Fundraising() {
               Our Commitment to Stewardship
             </h2>
             <p className="text-gray-700 leading-relaxed max-w-3xl">
-              Our organization is committed to advancing mental well-being through structured, ethical, and evidence-informed practices. We operate with the belief that access to psychological support should not be constrained by socioeconomic or geographic limitations.
+              Our organization is committed to advancing mental well-being
+              through structured, ethical, and evidence-informed practices. We
+              operate with the belief that access to psychological support
+              should not be constrained by socioeconomic or geographic
+              limitations.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4 max-w-3xl">
-              Strategic support from institutions, partners, and individuals enables us to strengthen program delivery, expand outreach, and ensure long-term sustainability of our mental health initiatives.
+              Strategic support from institutions, partners, and individuals
+              enables us to strengthen program delivery, expand outreach, and
+              ensure long-term sustainability of our mental health initiatives.
             </p>
           </div>
         </div>
@@ -96,7 +105,10 @@ export default function Fundraising() {
                   "Implementation of evidence-based programs and community partnerships",
               },
             ].map((resource, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div
+                key={index}
+                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              >
                 <div className="text-secondary mb-4">{resource.icon}</div>
                 <h3 className="text-lg font-semibold text-primary mb-3">
                   {resource.title}
@@ -108,7 +120,8 @@ export default function Fundraising() {
 
           <div className="mt-12 p-8 bg-blue-50 rounded-lg border-l-4 border-primary">
             <p className="text-gray-700 leading-relaxed font-semibold">
-              We value transparency, accountability, and ethical stewardship in all forms of support.
+              We value transparency, accountability, and ethical stewardship in
+              all forms of support.
             </p>
           </div>
         </div>
@@ -123,7 +136,8 @@ export default function Fundraising() {
 
           <div className="mb-12">
             <p className="text-gray-700 leading-relaxed max-w-3xl mb-8">
-              We welcome collaboration with organizations and partners who share our commitment to mental health and well-being.
+              We welcome collaboration with organizations and partners who share
+              our commitment to mental health and well-being.
             </p>
           </div>
 
@@ -154,7 +168,10 @@ export default function Fundraising() {
                   "Engagement with global initiatives working toward sustainable development",
               },
             ].map((partner, index) => (
-              <div key={index} className="p-8 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-lg border border-secondary/20">
+              <div
+                key={index}
+                className="p-8 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-lg border border-secondary/20"
+              >
                 <div className="text-secondary mb-4">{partner.icon}</div>
                 <h3 className="text-lg font-semibold text-primary mb-3">
                   {partner.title}
@@ -165,9 +182,13 @@ export default function Fundraising() {
           </div>
 
           <div className="mt-12 p-8 bg-teal-50 rounded-lg">
-            <p className="text-gray-900 font-semibold mb-2">Together, We Can Strengthen Mental Health Ecosystems</p>
+            <p className="text-gray-900 font-semibold mb-2">
+              Together, We Can Strengthen Mental Health Ecosystems
+            </p>
             <p className="text-gray-700 leading-relaxed">
-              Through collaboration and strategic partnerships, we can extend meaningful support worldwide and create lasting change in mental health systems globally.
+              Through collaboration and strategic partnerships, we can extend
+              meaningful support worldwide and create lasting change in mental
+              health systems globally.
             </p>
           </div>
         </div>
@@ -219,8 +240,13 @@ export default function Fundraising() {
                   "Collaborate on research projects and innovative solutions for mental health",
               },
             ].map((way, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
-                <div className="text-4xl font-bold text-secondary mb-4">{way.number}</div>
+              <div
+                key={index}
+                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center"
+              >
+                <div className="text-4xl font-bold text-secondary mb-4">
+                  {way.number}
+                </div>
                 <h3 className="text-lg font-semibold text-primary mb-3">
                   {way.title}
                 </h3>
@@ -266,7 +292,10 @@ export default function Fundraising() {
                   "Building long-term capacity and programs that create lasting, measurable change",
               },
             ].map((principle, index) => (
-              <div key={index} className="flex gap-4 p-6 bg-gray-50 rounded-lg border-l-4 border-secondary">
+              <div
+                key={index}
+                className="flex gap-4 p-6 bg-gray-50 rounded-lg border-l-4 border-secondary"
+              >
                 <CheckCircle className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
