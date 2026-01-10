@@ -197,13 +197,6 @@ export default function Impact() {
         </div>
       </section>
 
-      {/* Heart Icon for import */}
-      {/* Added invisible import */}
-      {(() => {
-        const { Heart } = require("lucide-react");
-        return null;
-      })()}
-
       {/* CTA */}
       <section className="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
