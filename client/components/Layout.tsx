@@ -320,7 +320,7 @@ export default function Layout({ children }: LayoutProps) {
                 <li>
                   <a
                     href="tel:+911140538140"
-                    className="hover:text-blue-500 transition-colors"
+                    className="hover:text-primary transition-colors"
                   >
                     011-40538140
                   </a>
@@ -328,7 +328,7 @@ export default function Layout({ children }: LayoutProps) {
                 <li>
                   <a
                     href="mailto:info@ngo.org"
-                    className="hover:text-blue-500 transition-colors"
+                    className="hover:text-primary transition-colors"
                   >
                     info@ngo.org
                   </a>
@@ -336,7 +336,7 @@ export default function Layout({ children }: LayoutProps) {
                 <li>
                   <Link
                     to="/contact"
-                    className="hover:text-blue-500 transition-colors"
+                    className="hover:text-primary transition-colors"
                   >
                     Contact Us
                   </Link>
