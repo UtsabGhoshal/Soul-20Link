@@ -146,18 +146,48 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-12 md:py-16 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-lg overflow-hidden shadow-lg h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.5503799999998!2d88.37!3d22.57!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM0JzEyLjAiTiA4OMKwMjInMTIuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-            />
+      {/* Quick Contact Actions */}
+      <section className="py-12 md:py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+            Quick Contact Methods
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/919876543210"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-500 text-center"
+            >
+              <div className="text-4xl font-bold text-green-500 mb-3">💬</div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                WhatsApp
+              </h3>
+              <p className="text-gray-600 text-sm mb-4">
+                Quick and convenient communication
+              </p>
+              <p className="text-primary font-semibold text-sm">
+                Available during office hours
+              </p>
+            </a>
+
+            {/* Direct Call */}
+            <a
+              href="tel:+919876543210"
+              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-primary text-center"
+            >
+              <div className="text-4xl font-bold text-primary mb-3">📞</div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Direct Call
+              </h3>
+              <p className="text-gray-600 text-sm mb-4">
+                Preferred method for effective communication
+              </p>
+              <p className="text-primary font-semibold text-sm">
+                10:00 AM - 7:00 PM (Mon-Sat)
+              </p>
+            </a>
           </div>
         </div>
       </section>
