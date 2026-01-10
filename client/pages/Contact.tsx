@@ -303,7 +303,7 @@ export default function Contact() {
             </div>
 
             <p className="text-center text-sm text-gray-600 pt-4 border-t border-gray-300">
-              We typically respond within 24 hours during business days.
+              We typically respond as soon as possible during our office hours: Monday - Saturday, 10:00 AM - 7:00 PM.
             </p>
           </form>
         </div>
