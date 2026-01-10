@@ -31,7 +31,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Top Blue Header Bar with Scrolling Text */}
-      <div className="bg-blue-600 text-white py-2 overflow-hidden">
+      <div className="bg-primary text-white py-2 overflow-hidden">
         <div className="flex items-center gap-6">
           {/* Scrolling Text */}
           <div className="scroll-text-container flex-1 min-w-0">
