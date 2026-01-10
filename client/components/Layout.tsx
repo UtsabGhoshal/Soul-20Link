@@ -37,10 +37,11 @@ export default function Layout({ children }: LayoutProps) {
           <div className="scroll-text-container flex-1 min-w-0">
             <div className="scroll-text inline-block">
               <span>
-                📞 Thank you for contacting Prajit Rong | Calls/WhatsApp
-                Preferred | 📅 Mon-Sat, 10 AM - 7 PM | 📧
-                teamprajitrong@gmail.com | Soul Link Foundation - Advancing
-                Mental Well-Being Globally
+                Soul Link is registered under sections 12A &amp; 80G of the Income Tax Act, 1961 and CSR-1 registered under the Ministry of Health &amp; Education.{" "}
+                <Link to="/certificates" className="underline hover:opacity-80 transition-opacity font-semibold">
+                  click here
+                </Link>
+                {" "} to view the certificates
               </span>
             </div>
           </div>
