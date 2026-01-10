@@ -343,27 +343,25 @@ export default function Layout({ children }: LayoutProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 text-sm text-gray-400">
               <div>
                 <p className="font-semibold text-white mb-1">
-                  Organization Details
+                  📍 Quick Contact
                 </p>
                 <p>
-                  Registration No: HCF/2010/12345 | PAN: AABCT5050D | 80G:
-                  80G/2010/12345
+                  Prajit Rong | 📞 Call/WhatsApp | 🕙 10 AM - 7 PM (Mon-Sat) | 📧 teamprajitrong@gmail.com
                 </p>
               </div>
               <div>
                 <p className="font-semibold text-white mb-1">
-                  Legal Disclaimer
+                  Mission & Values
                 </p>
                 <p>
-                  Donations are voluntary and non-refundable. All contributions
-                  are utilized transparently and accounted for.
+                  Providing accessible, inclusive mental health support without financial barriers.
+                  Committed to ethics, transparency, and measurable impact.
                 </p>
               </div>
             </div>
             <div className="text-center text-gray-500 text-sm border-t border-gray-700 pt-6">
               <p>
-                &copy; 2024 Soul Link Foundation. All rights reserved. | Mental
-                Health & Healthcare Services
+                &copy; 2024 SoulLink Foundation. All rights reserved. | Advancing Mental Well-Being Globally
               </p>
             </div>
           </div>
