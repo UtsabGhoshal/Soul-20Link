@@ -431,7 +431,7 @@ export default function Home() {
       </section>
 
       {/* Donation Section at Bottom */}
-      <section className="bg-blue-600 py-16 md:py-24 text-white">
+      <section className="bg-primary py-16 md:py-24 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
             <Heart className="w-16 h-16" />
