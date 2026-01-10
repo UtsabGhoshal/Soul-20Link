@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
+import ImpactSection from "../components/ImpactSection";
 import {
   ArrowRight,
   Heart,
