@@ -157,15 +157,15 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-8 bg-blue-600 text-white">
+              <div className="p-8 bg-primary text-white">
                 <h3 className="text-2xl font-bold mb-3">Mental Health</h3>
-                <p className="text-blue-100 mb-4">
+                <p className="text-primary/90 mb-4">
                   Comprehensive psychological counseling, therapy, and mental
                   health awareness programs for individuals and communities.
                 </p>
                 <Link
-                  to="/news"
-                  className="inline-flex items-center gap-2 text-white font-semibold hover:text-blue-200 transition-colors"
+                  to="/services"
+                  className="inline-flex items-center gap-2 text-white font-semibold hover:text-primary/80 transition-colors"
                 >
                   Read More <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -181,7 +181,7 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-8 bg-blue-700 text-white">
+              <div className="p-8 bg-secondary text-white">
                 <h3 className="text-2xl font-bold mb-3">Healthcare Services</h3>
                 <p className="text-blue-100 mb-4">
                   Medical consultation, health awareness, and preventive care
