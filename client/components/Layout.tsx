@@ -98,7 +98,7 @@ export default function Layout({ children }: LayoutProps) {
                 <Link
                   key={link.href}
                   to={link.href}
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm"
+                  className="text-gray-700 hover:text-primary font-medium transition-colors text-sm"
                 >
                   {link.label}
                 </Link>
