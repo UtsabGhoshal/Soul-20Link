@@ -1,26 +1,28 @@
+
 import "dotenv/config";
 import { db } from "../server/db";
 import { users } from "../shared/schema";
-import { hash } from "bcryptjs";
+import bcrypt from "bcryptjs";
 
 async function main() {
-    console.log("Seeding admin user...");
-
-    const password = await hash("admin123", 10);
-
     try {
-        const res = await db.insert(users).values({
+        const hashedPassword = await bcrypt.hash("admin", 10);
+
+        console.log("Seeding admin user...");
+        await db.insert(users).values({
             username: "admin",
-            password: password,
+            password: hashedPassword,
             role: "admin",
-        }).returning();
+        });
 
-        console.log("Admin user created successfully:", res[0].username);
-    } catch (error: any) {
-        console.error("Error creating admin user:", error.message);
+        console.log("Admin user created successfully!");
+        console.log("Username: admin");
+        console.log("Password: admin");
+    } catch (error) {
+        console.error("Error seeding admin user:", error);
+    } finally {
+        process.exit(0);
     }
-
-    process.exit(0);
 }
 
 main();
