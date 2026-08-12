@@ -10,17 +10,20 @@ import {
 } from "lucide-react";
 
 export default function Admin() {
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === "admin123") {
+    if (username.trim() === "admin" && password === "admin123") {
       setIsLoggedIn(true);
+      setError("");
       setPassword("");
+      setUsername("");
     } else {
-      alert("Invalid password");
-      setPassword("");
+      setError("Invalid username or password");
     }
   };
 
@@ -34,16 +37,36 @@ export default function Admin() {
                 <Lock className="w-12 h-12 text-primary" />
               </div>
               <h1 className="text-3xl font-bold text-gray-900 text-center mb-2">
-                Admin Panel
+                Admin Login
               </h1>
               <p className="text-gray-600 text-center mb-8">
                 Secure login area for administrators
               </p>
 
+              {error && (
+                <div className="mb-4 p-3 bg-red-50 text-red-700 text-sm rounded-lg border border-red-200">
+                  {error}
+                </div>
+              )}
+
               <form onSubmit={handleLogin} className="space-y-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Admin Password
+                    Username
+                  </label>
+                  <input
+                    type="text"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+                    placeholder="Enter admin username"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">
+                    Password
                   </label>
                   <input
                     type="password"
@@ -59,14 +82,18 @@ export default function Admin() {
                   type="submit"
                   className="w-full bg-primary hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-colors"
                 >
-                  Login
+                  Sign in
                 </button>
               </form>
 
-              <p className="text-center text-sm text-gray-600 mt-6 pt-6 border-t border-gray-300">
-                Demo password:{" "}
-                <code className="bg-gray-100 px-2 py-1 rounded">admin123</code>
-              </p>
+              <div className="text-center text-sm text-gray-600 mt-6 pt-6 border-t border-gray-300 space-y-1">
+                <p>
+                  Demo Username: <code className="bg-gray-100 px-2 py-1 rounded">admin</code>
+                </p>
+                <p>
+                  Demo Password: <code className="bg-gray-100 px-2 py-1 rounded">admin123</code>
+                </p>
+              </div>
             </div>
           </div>
         </section>
